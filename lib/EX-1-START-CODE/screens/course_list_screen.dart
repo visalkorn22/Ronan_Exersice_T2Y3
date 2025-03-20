@@ -1,3 +1,4 @@
+// 1. Create a new file named course_list_screen.dart in the screens folder.
 import 'package:flutter/material.dart';
 import '../models/course.dart';
 import 'course_screen.dart';
@@ -12,7 +13,13 @@ class CourseListScreen extends StatefulWidget {
 }
 
 class _CourseListScreenState extends State<CourseListScreen> {
-  final List<Course> _allCourses = [Course(name: 'HTML'), Course(name: 'JAVA')];
+  final List<Course> _allCourses = [
+    Course(name: 'HTML'),
+    Course(name: 'JAVA'),
+    Course(name: 'Flutter'),
+    Course(name: 'Python'),
+    Course(name: 'Dart'),
+  ];
 
   void _editCourse(Course course) async {
     await Navigator.of(context).push<Course>(

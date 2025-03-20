@@ -7,6 +7,7 @@ class CoursesMockRepository implements CoursesRepository {
     Course(name: 'JAVA'),
     Course(name: 'Flutter'),
     Course(name: 'Python'),
+    Course(name: 'Dart'),
   ];
 
   @override
